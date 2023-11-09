@@ -1,0 +1,12 @@
+env: local
+env_base_http_url: http://localhost
+name: b2b-orchestrator
+version: v1
+log_level: debug
+ports:
+  http: 80
+data_store:
+  url: root:password@tcp(localhost:3306)/b2b-orchestrator?parseTime=true
+  max_open_conns: 30
+  max_idle_conns: 10
+  conn_max_life_time: 30s
